@@ -1,32 +1,30 @@
-# Election_Analysis
+# Election Analysis
+## Overview of Election Audit
+The purpose of this election audit analysis was to retrieve additional information as per the election commissions’ request. This includes what the voter turnout was for each county, the percentage of votes from each county out of the total count, and which county had the highest voter turnout.
 
-## Project Overview
 
+## Election-Audit Results
+<img width="266" alt="election_analysis" src="https://user-images.githubusercontent.com/64383146/169443977-0887a7e9-e46f-4ff1-80f0-49935bb9775b.png">
 
-1. Calculate the total number of votes cast.
-2. Get a comlete list of candidates who received votes.
-3. Calculate the total number of votes each candidate received.
-4. Calculate the percentage of votes each candidate won.
-5. Determine the winner of the election based on popular vote.
+- There were 369,711 votes cast in the election.
+- The county votes were:
+   - Jefferson county had 38,855 votes, 10.5% of the vote.
+   - Denver county had 306,055 votes, 82.8% of the vote.
+   - Arapahoe county had 24,801 votes, 6.7% of the vote.
 
-## Resources
- - Data Source: election_results.csv
- - Software: Python 3.6.1, Visual Code Studio, 1.38.1
+The county of Denver had the largest number of votes, making up a majority of the votes.
 
-## Summary
-The analysis of the election show that:
-- There were "x" votes cast in the election.
-- The candidates were:
-  - Candidate 1
-  - Candidate 2
-  - Candidate 3
-- The candidate results were:
-  - Candidate 1 received "x%" of the vote and "y" number of votes.
-  - Candidate 2 received "x%" of the vote and "y" number of votes.
-  - Candidate 3 received "x%" of the vote and "y" number of votes.
+- The candidates and their votes were:
+   - Charles Casper Stockham received 85,213 votes, 23% of the vote.
+   - Diana DeGette received 272,892 votes, 73.8% of the vote.
+   - Raymon Anthony Doane received 11,606 votes, 3.1% of the vote.
 - The winner of the election was:
-  - Candidate (1, 2, or 3), who received "x%" of the vote and "y" number of votes.
+   - Diana DeGette, who received 272,892 votes and 73.8% of the vote.
 
-## Challenge Overview
+## Election-Audit Summary
+This script, with some modifications, can be used for any election.
+One way that can be used is by loading a different file into this section of the code:
+ - file_to_load = os.path.join("election_results.csv")
 
-## Challenge Summary
+By replacing "election_analysis.csv" with any other csv file that has other election results, the script will be able to be used for any election.
+Replacing this csv file would mean that we could have more candidates and multiple counties that the code would be able to account for and create an output for.
