@@ -23,8 +23,14 @@ The county of Denver had the largest number of votes, making up a majority of th
 
 ## Election-Audit Summary
 This script, with some modifications, can be used for any election.
-One way that can be used is by loading a different file into this section of the code:
+
+One way that it can be used is by loading a different file into this section of the code:
  - file_to_load = os.path.join("election_results.csv")
 
-By replacing "election_analysis.csv" with any other csv file that has other election results, the script will be able to be used for any election.
-Replacing this csv file would mean that we could have more candidates and multiple counties that the code would be able to account for and create an output for.
+By substituting "election_analysis.csv" with any other csv file that has other county election results, the script will be able to be used for those elections. Replacing this csv file would mean that we could have more candidates and multiple counties that the code would be able to take into account and create an output for.
+
+Another modification that can be made is that when the csv file is changed, this script can be used for other types of elections, other than county. The parts of the code that would need to be changed would be like:
+
+<img width="106" alt="county_ex" src="https://user-images.githubusercontent.com/64383146/169453920-de7dad24-11f3-4f18-8f88-5ee0bb1bc692.png"> <img width="180" alt="county_ex2" src="https://user-images.githubusercontent.com/64383146/169453930-8d3bf9ab-8efe-4d65-b883-5d449528068d.png">
+
+Wherever it says "county" would need to be changed to fit the type of election it would be for.
